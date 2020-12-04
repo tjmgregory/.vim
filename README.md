@@ -10,6 +10,7 @@ This requires Vim 8 or higher.
 
 The following commands assume you're happy to lose any pre-existing configurations.
 
-`git clone --recursive git@github.com:tjmgregory/.vim.git ~/.vim`
-
-`echo "source ~/.vim/.vimrc" > ~/.vimrc``
+```bash
+git clone --recursive git@github.com:tjmgregory/.vim.git ~/.vim
+echo "source ~/.vim/.vimrc" > ~/.vimrc
+```
