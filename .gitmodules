@@ -1,0 +1,12 @@
+[submodule "pack/theodored/start/auto-pairs"]
+	path = pack/theodored/start/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs
+[submodule "pack/theodored/start/coc.nvim"]
+	path = pack/theodored/start/coc.nvim
+	url = https://github.com/neoclide/coc.nvim
+[submodule "pack/theodored/start/nerdtree"]
+	path = pack/theodored/start/nerdtree
+	url = https://github.com/preservim/nerdtree
+[submodule "pack/theodored/start/vim-fugitive"]
+	path = pack/theodored/start/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
