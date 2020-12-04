@@ -2,7 +2,7 @@
 
 My vim setup, making use of Vim 8's native package support and Git's submodules.
 
-Branching can be used to switch between language support. Inspired by the wonderful @mikesive's [vim setup](https://github.com/mikesive/.vim).
+Branching can be used to switch between language support. Inspired by the wonderful [@mikesive](https://github.com/mikesive)'s [vim setup](https://github.com/mikesive/.vim).
 
 ## Setup
 
