@@ -14,3 +14,16 @@ The following commands assume you're happy to lose any pre-existing configuratio
 git clone --recursive git@github.com:tjmgregory/.vim.git ~/.vim
 echo "source ~/.vim/.vimrc" > ~/.vimrc
 ```
+
+I also recommend adding the following command to you bash rc, as it solves a [known issue](https://github.com/gitextensions/gitextensions/issues/3065) with branching and sub-modules.
+
+This can be run with `vco branch-name` to switch between the branches for different languages.
+
+```bash
+export VIM_DIR=~/.vim/.git
+function vco(){
+   git --git-dir $VIM_DIR submodule deinit .
+   git --git-dir $VIM_DIR checkout --force $1
+   git --git-dir $VIM_DIR submodule update --init --recursive
+}
+```
