@@ -8,3 +8,6 @@ let g:go_auto_type_info = 1
 " Autocomplete on . press
 au filetype go inoremap <buffer> . .<C-x><C-o>
 
+" Go to definition with m
+nnoremap <silent> m :GoDef<CR>
+
