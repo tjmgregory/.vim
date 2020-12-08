@@ -10,3 +10,6 @@
 [submodule "pack/theodored/start/vim-fugitive"]
 	path = pack/theodored/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive
+[submodule "pack/theodored/start/fzf"]
+	path = pack/theodored/start/fzf
+	url = https://github.com/junegunn/fzf.git
