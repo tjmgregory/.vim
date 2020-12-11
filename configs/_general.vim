@@ -33,6 +33,3 @@ set encoding=utf-8
 " Set the encoding of files written
 set fileencoding=utf-8
 
-" Ag (Better Ack)
-let g:ackprg = 'ag --nogroup --nocolor --column'
-

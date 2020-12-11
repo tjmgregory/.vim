@@ -1,0 +1,8 @@
+echo 'source ~/.vim/.vimrc' > ~/.vimrc
+
+# Install FZF
+~/.vim/pack/theodored/start/fzf/install
+
+brew install ripgrep
+
+echo 'export FZF_DEFAULT_COMMAND=\'rg --files --hidden --follow\'' >> ~/.fzf.zsh
