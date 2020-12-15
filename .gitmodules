@@ -13,9 +13,6 @@
 [submodule "pack/theodored/start/fzf"]
 	path = pack/theodored/start/fzf
 	url = https://github.com/junegunn/fzf.git
-[submodule "pack/theodored/start/vim-ripgrep"]
-	path = pack/theodored/start/vim-ripgrep
-	url = https://github.com/jremmen/vim-ripgrep.git
 [submodule "pack/theodored/start/fzf.vim"]
 	path = pack/theodored/start/fzf.vim
 	url = https://github.com/junegunn/fzf.vim.git
