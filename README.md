@@ -10,6 +10,8 @@ This requires Vim 8 or higher.
 
 The following commands assume you're happy to lose any pre-existing configurations.
 
+It also assumes that you are using the [Homebrew](https://brew.sh) package manager, and the [Zsh](https://www.zsh.org/) shell.
+
 ```bash
 git clone --recursive git@github.com:tjmgregory/.vim.git ~/.vim
 chmod +x ~/.vim/install
@@ -32,15 +34,6 @@ To make RG look more like SilverSearcher when running FZF, add the following to 
 
 ### Switching languages
 
-Add the following command to you bash rc, as it solves a [known issue](https://github.com/gitextensions/gitextensions/issues/3065) with branching and sub-modules.
+The install script will add the function `vco` to your path. Each branch of this repo represents a different setup for vim.
 
-This can be run with `vco branch-name` to switch between the branches for different languages.
-
-```bash
-export VIM_DIR=~/.vim/.git
-function vco(){
-   git --git-dir $VIM_DIR submodule deinit .
-   git --git-dir $VIM_DIR checkout --force $1
-   git --git-dir $VIM_DIR submodule update --init --recursive
-}
-```
+i.e. `vco go` will setup vim for developing Go.
