@@ -5,6 +5,7 @@ set number
 " Syntax highlighting
 syntax on
 colo pablo
+set re=0
 
 filetype plugin indent on
 " Allow backspace to delete indentation and inserted text
