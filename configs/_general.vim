@@ -4,7 +4,7 @@ set number
 
 " Syntax highlighting
 syntax on
-colo pablo
+colo darcula
 set re=0
 
 filetype plugin indent on
@@ -34,3 +34,5 @@ set encoding=utf-8
 " Set the encoding of files written
 set fileencoding=utf-8
 
+" Show the leader key in the bottom when it has been activated
+set showcmd
