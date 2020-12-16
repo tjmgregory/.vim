@@ -4,5 +4,6 @@ echo 'source ~/.vim/.vimrc' > ~/.vimrc
 ~/.vim/pack/theodored/start/fzf/install
 
 brew install ripgrep
+brew install bat
 
 echo 'source ~/.vim/env.sh' >> ~/.zshrc
