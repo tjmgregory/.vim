@@ -19,3 +19,9 @@
 [submodule "pack/theodored/start/fzf.vim"]
 	path = pack/theodored/start/fzf.vim
 	url = https://github.com/junegunn/fzf.vim.git
+[submodule "pack/theodored/start/vim-airline"]
+	path = pack/theodored/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "pack/theodored/start/darcula"]
+	path = pack/theodored/start/darcula
+	url = https://github.com/doums/darcula.git
