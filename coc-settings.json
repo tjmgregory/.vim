@@ -1,5 +1,8 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["ts", "Markdown"],
+  "coc.preferences.formatOnSaveFiletypes": [
+      "ts",
+      "Markdown"
+  ],
   "go.goplsOptions": {
     "experimentalWorkspaceModule": true
   }
