@@ -1,5 +1,5 @@
 " coc
-let g:coc_global_extensions = []
+let g:coc_global_extensions = [ 'coc-tsserver', 'coc-prettier' ]
 
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
