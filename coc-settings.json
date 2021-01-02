@@ -1,7 +1,3 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": [
-      "ts",
-      "Markdown"
-  ],
-  "diagnostic.checkCurrentLine": true
+    "diagnostic.checkCurrentLine": true
 }
