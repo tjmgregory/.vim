@@ -2,5 +2,13 @@
     "diagnostic.checkCurrentLine": true,
     "go.goplsOptions": {
         "experimentalWorkspaceModule": true
+    },
+    "languageserver": {
+        "golang": {
+            "command": "gopls",
+            "rootPatterns": ["go.mod"],
+            "disableWorkspaceFolders": true,
+            "filetypes": ["go"]
+        }
     }
 }
