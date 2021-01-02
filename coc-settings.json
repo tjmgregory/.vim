@@ -1,10 +1,6 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": [
-      "ts",
-      "Markdown"
-  ],
-  "go.goplsOptions": {
-    "experimentalWorkspaceModule": true
-  },
-  "diagnostic.checkCurrentLine": true
+    "diagnostic.checkCurrentLine": true,
+    "go.goplsOptions": {
+        "experimentalWorkspaceModule": true
+    }
 }
