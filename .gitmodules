@@ -25,3 +25,6 @@
 [submodule "pack/theodored/start/vim-autoformat"]
 	path = pack/theodored/start/vim-autoformat
 	url = https://github.com/Chiel92/vim-autoformat.git
+[submodule "pack/theodored/start/typescript-vim"]
+	path = pack/theodored/start/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
