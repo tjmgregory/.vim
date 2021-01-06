@@ -36,3 +36,7 @@ set fileencoding=utf-8
 
 " Show the leader key in the bottom when it has been activated
 set showcmd
+
+" Leader key saving
+nnoremap <Leader>w :w<CR>
+
