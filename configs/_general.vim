@@ -40,3 +40,6 @@ set showcmd
 " Leader key saving
 nnoremap <Leader>w :w<CR>
 
+" Leader key exiting
+nnoremap <Leader>q :q<CR>
+nnoremap <Leader>wq :wq<CR>
