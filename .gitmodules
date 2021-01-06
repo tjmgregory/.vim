@@ -28,6 +28,9 @@
 [submodule "pack/theodored/start/vimspector"]
     path = pack/theodored/start/vimspector
     url = https://github.com/puremourning/vimspector.git
+[submodule "pack/theodored/start/nerdcommenter"]
+    path = pack/theodored/start/nerdcommenter
+    url = https://github.com/preservim/nerdcommenter.git
 [submodule "pack/theodored/start/typescript-vim"]
     path = pack/theodored/start/typescript-vim
     url = https://github.com/leafgarland/typescript-vim.git
