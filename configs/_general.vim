@@ -37,9 +37,25 @@ set fileencoding=utf-8
 " Show the leader key in the bottom when it has been activated
 set showcmd
 
-" Leader key saving
+" Leader key saving and exiting
 nnoremap <Leader>w :w<CR>
-
-" Leader key exiting
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>wq :wq<CR>
+
+" Split to the right and below
+set splitbelow
+set splitright
+
+" " Copy to clipboard
+vnoremap  <leader>y  "+y
+nnoremap  <leader>Y  "+yg_
+nnoremap  <leader>y  "+y
+nnoremap  <leader>yy  "+yy
+" " Paste from clipboard
+nnoremap <leader>p "+p
+nnoremap <leader>P "+P
+vnoremap <leader>p "+p
+vnoremap <leader>P "+P
+
+" terminal
+nmap <leader>t :vert term<CR>
