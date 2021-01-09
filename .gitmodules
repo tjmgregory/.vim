@@ -34,3 +34,6 @@
 [submodule "pack/theodored/start/nerdcommenter"]
 	path = pack/theodored/start/nerdcommenter
 	url = https://github.com/preservim/nerdcommenter.git
+[submodule "pack/theodored/start/vim-surround"]
+	path = pack/theodored/start/vim-surround
+	url = https://github.com/tpope/vim-surround.git
