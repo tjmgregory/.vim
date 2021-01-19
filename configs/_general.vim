@@ -62,3 +62,6 @@ nmap <leader>t :vert term<CR>
 
 " Dont continue comments on enter
 set formatoptions-=cro
+
+" Allow opening of new buffers when the current contains unsaved changes
+set hidden
