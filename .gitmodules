@@ -37,3 +37,6 @@
 [submodule "pack/theodored/start/vim-surround"]
 	path = pack/theodored/start/vim-surround
 	url = https://github.com/tpope/vim-surround.git
+[submodule "pack/theodored/start/gitlink-vim"]
+	path = pack/theodored/start/gitlink-vim
+	url = https://github.com/iautom8things/gitlink-vim.git

@@ -7,8 +7,13 @@
 let NERDTreeShowHidden=1
 let NERDTreeIgnore=['\.DS_Store$', '\.git$'] " ignore files in nerd tree
 
+" Improved finding shortcuts
 map <C-n> :NERDTreeToggle<CR>
+map <C-m> :NERDTreeFind<CR>
 
 " Allow deleting files
 set modifiable
 
+" Match file opening commmands of ripgrep/fzf
+let NERDTreeMapOpenSplit='<C-x>'
+let NERDTreeMapOpenVSplit='<C-v>'
