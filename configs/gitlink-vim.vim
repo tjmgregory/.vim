@@ -1,3 +1,5 @@
+command GitLink :echo gitlink#GitLink()
+
 function! CopyGitLink(...) range
     redir @+
     silent echo gitlink#GitLink(get(a:, 1, 0))
