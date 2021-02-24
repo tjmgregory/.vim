@@ -4,7 +4,8 @@
 " let g:formatters_typescript = ['prettier']
 " let g:formatters_ts = ['prettier']
 
-let blacklist = ['yaml', 'yml', 'ts', 'typescript']
+let blacklist = ['yaml', 'yml', 'ts', 'typescript', 'tsx']
 autocmd BufWritePre * if index(blacklist, &ft) < 0 | :Autoformat
 
 au BufWritePre *.ts :Prettier
+au BufWritePre *.tsx :Prettier
