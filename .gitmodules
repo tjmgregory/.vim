@@ -1,39 +1,36 @@
 [submodule "pack/theodored/start/auto-pairs"]
-	path = pack/theodored/start/auto-pairs
-	url = https://github.com/jiangmiao/auto-pairs
+    path = pack/theodored/start/auto-pairs
+    url = https://github.com/jiangmiao/auto-pairs
 [submodule "pack/theodored/start/coc.nvim"]
-	path = pack/theodored/start/coc.nvim
-	url = https://github.com/neoclide/coc.nvim
+    path = pack/theodored/start/coc.nvim
+    url = https://github.com/neoclide/coc.nvim
 [submodule "pack/theodored/start/nerdtree"]
-	path = pack/theodored/start/nerdtree
-	url = https://github.com/preservim/nerdtree
+    path = pack/theodored/start/nerdtree
+    url = https://github.com/preservim/nerdtree
 [submodule "pack/theodored/start/vim-fugitive"]
-	path = pack/theodored/start/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive
+    path = pack/theodored/start/vim-fugitive
+    url = https://github.com/tpope/vim-fugitive
 [submodule "pack/theodored/start/fzf"]
-	path = pack/theodored/start/fzf
-	url = https://github.com/junegunn/fzf.git
+    path = pack/theodored/start/fzf
+    url = https://github.com/junegunn/fzf.git
 [submodule "pack/theodored/start/fzf.vim"]
-	path = pack/theodored/start/fzf.vim
-	url = https://github.com/junegunn/fzf.vim.git
+    path = pack/theodored/start/fzf.vim
+    url = https://github.com/junegunn/fzf.vim.git
 [submodule "pack/theodored/start/vim-airline"]
-	path = pack/theodored/start/vim-airline
-	url = https://github.com/vim-airline/vim-airline.git
+    path = pack/theodored/start/vim-airline
+    url = https://github.com/vim-airline/vim-airline.git
 [submodule "pack/theodored/start/darcula"]
-	path = pack/theodored/start/darcula
-	url = https://github.com/doums/darcula.git
-[submodule "pack/theodored/start/vim-autoformat"]
-	path = pack/theodored/start/vim-autoformat
-	url = https://github.com/Chiel92/vim-autoformat.git
+    path = pack/theodored/start/darcula
+    url = https://github.com/doums/darcula.git
 [submodule "pack/theodored/start/vimspector"]
-	path = pack/theodored/start/vimspector
-	url = https://github.com/puremourning/vimspector.git
+    path = pack/theodored/start/vimspector
+    url = https://github.com/puremourning/vimspector.git
 [submodule "pack/theodored/start/nerdcommenter"]
-	path = pack/theodored/start/nerdcommenter
-	url = https://github.com/preservim/nerdcommenter.git
+    path = pack/theodored/start/nerdcommenter
+    url = https://github.com/preservim/nerdcommenter.git
 [submodule "pack/theodored/start/vim-surround"]
-	path = pack/theodored/start/vim-surround
-	url = https://github.com/tpope/vim-surround.git
+    path = pack/theodored/start/vim-surround
+    url = https://github.com/tpope/vim-surround.git
 [submodule "pack/theodored/start/gitlink-vim"]
-	path = pack/theodored/start/gitlink-vim
-	url = https://github.com/iautom8things/gitlink-vim.git
+    path = pack/theodored/start/gitlink-vim
+    url = https://github.com/iautom8things/gitlink-vim.git
