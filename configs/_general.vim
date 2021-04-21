@@ -65,3 +65,11 @@ set formatoptions-=cro
 
 " Allow opening of new buffers when the current contains unsaved changes
 set hidden
+
+" Prettier format the current buffer
+vnoremap <Leader>p :Prettier<CR>
+vnoremap <Leader>P :Prettier a<CR>
+nnoremap <Leader>p :Prettier<CR>
+nnoremap <Leader>P :Prettier a<CR>
+inoremap <Leader>p :Prettier<CR>
+inoremap <Leader>P :Prettier a<CR>
