@@ -59,6 +59,7 @@ vnoremap <leader>P "+P
 
 " terminal
 nmap <leader>t :vert term<CR>
+nmap <leader>T :tab term<CR>
 
 " Dont continue comments on enter
 set formatoptions-=cro
