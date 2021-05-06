@@ -1,3 +1,6 @@
+[submodule "pack/theodored/start/codedark"]
+	path = pack/theodored/start/codedark
+	url = git@github.com:tomasiser/vim-code-dark.git
 [submodule "pack/theodored/start/auto-pairs"]
     path = pack/theodored/start/auto-pairs
     url = https://github.com/jiangmiao/auto-pairs
@@ -19,9 +22,6 @@
 [submodule "pack/theodored/start/vim-airline"]
     path = pack/theodored/start/vim-airline
     url = https://github.com/vim-airline/vim-airline.git
-[submodule "pack/theodored/start/darcula"]
-    path = pack/theodored/start/darcula
-    url = https://github.com/doums/darcula.git
 [submodule "pack/theodored/start/vimspector"]
     path = pack/theodored/start/vimspector
     url = https://github.com/puremourning/vimspector.git
