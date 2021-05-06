@@ -4,8 +4,10 @@ set number
 
 " Syntax highlighting
 syntax on
-colo darcula
 set re=0
+
+" Colour scheme
+colo codedark
 
 filetype plugin indent on
 " Allow backspace to delete indentation and inserted text
