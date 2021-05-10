@@ -3,11 +3,18 @@
 set number
 
 " Syntax highlighting
-syntax on
-set re=0
+if !exists('g:syntax_on')
+  syntax on
+endif
+set re=1
 
 " Colour scheme
-colo codedark
+if !exists('g:loaded_color')
+  let g:loaded_color = 1
+
+  " Put your favorite colorscheme here
+  colo codedark
+endif
 
 filetype plugin indent on
 " Allow backspace to delete indentation and inserted text
