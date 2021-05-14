@@ -7,6 +7,11 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
+nmap <silent> gD :call CocAction('jumpDefinition', 'vsplit')<CR>
+nmap <silent> gY :call CocAction('jumpTypeDefinition', 'vsplit')<CR>
+nmap <silent> gI :call CocAction('jumpImplementation', 'vsplit')<CR>
+nmap <silent> gR :call CocAction('jumpReferences', 'vsplit')<CR>
+
 " Adds prettier support
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 
