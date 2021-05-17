@@ -32,3 +32,5 @@ function vco(){
 alias rmswp="find . -type f -name \"*.sw[klmnop]\" -delete"
 
 export HISTSIZE=1000000
+
+fpath+=${ZDOTDIR:-~}/.zsh_functions
