@@ -2,13 +2,17 @@
 " To choose colours, run :so $VIMRUNTIME/syntax/hitest.vim
 set laststatus=2
 
-function! GitBranch()
-    return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
+function! StoreGitBranch()
+    let l:is_git_dir = trim(system('git rev-parse --is-inside-work-tree'))
+    if l:is_git_dir is# 'true'
+        let g:git_branch = trim(system('git rev-parse --abbrev-ref HEAD'))
+    endif
 endfunction
 
+autocmd BufEnter * call StoreGitBranch()
+
 function! StatuslineGit()
-    let l:branchname = GitBranch()
-    return strlen(l:branchname) > 0?'  '.l:branchname.' ':''
+    return get(g:, 'git_branch', '')
 endfunction
 
 set statusline=
