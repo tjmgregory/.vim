@@ -23,4 +23,9 @@ set statusline+=\ %f
 set statusline+=\ %=
 set statusline+=\ %#Normal#
 set statusline+=\ %y
+set statusline+=%#StatusLine#
+set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
+set statusline+=\[%{&fileformat}\]
+set statusline+=%#DiffAdd#
+set statusline+=\ %p%%
 set statusline+=\ %l:%c
