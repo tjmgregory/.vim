@@ -1,3 +1,5 @@
+set -o vi
+
 export FZF_DEFAULT_COMMAND='rg --files --hidden'
 export FZF_DEFAULT_OPTS='--ansi --preview="bat --style=numbers --color=always {1}" --preview-window "right:60%" --layout reverse --margin=1,4 --bind "ctrl-n:down,ctrl-p:up,ctrl-b:preview-down,ctrl-o:preview-up"'
 
@@ -30,3 +32,5 @@ function vco(){
 alias rmswp="find . -type f -name \"*.sw[klmnop]\" -delete"
 
 export HISTSIZE=1000000
+
+fpath+=${ZDOTDIR:-~}/.zsh_functions
