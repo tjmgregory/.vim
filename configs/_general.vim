@@ -2,6 +2,10 @@
 " Line numbers
 set number
 
+" Line and column highlighting
+set cursorline
+set cursorcolumn
+
 " Syntax highlighting
 if !exists('g:syntax_on')
   syntax on
