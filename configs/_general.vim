@@ -10,7 +10,7 @@ set cursorcolumn
 if !exists('g:syntax_on')
   syntax on
 endif
-set re=1
+set re=0
 
 " Colour scheme
 if !exists('g:loaded_color')
