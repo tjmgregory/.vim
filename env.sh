@@ -35,7 +35,5 @@ export HISTSIZE=1000000
 
 fpath+="$VIM_DIR/zsh_functions"
 
-source $VIM_DIR/.zsh_functions/git.zsh
-
 export EDITOR="vi -e"
 export VISUAL="vim"
