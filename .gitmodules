@@ -25,3 +25,6 @@
 [submodule "pack/theodored/start/gitlink-vim"]
     path = pack/theodored/start/gitlink-vim
     url = https://github.com/iautom8things/gitlink-vim.git
+[submodule "pack/theodored/start/codedark"]
+	path = pack/theodored/start/codedark
+	url = https://github.com/tjmgregory/vim-code-dark
