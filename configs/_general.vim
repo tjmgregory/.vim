@@ -30,7 +30,7 @@ set backspace=indent,eol,start
 "        stop once at the start of insert.
 
 " Spaces not tabs
-set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
+set tabstop=2 softtabstop=0 expandtab shiftwidth=2
 
 " Tab navigation
 nnoremap <C-Left> :tabprevious<CR>
