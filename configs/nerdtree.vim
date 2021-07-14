@@ -5,7 +5,7 @@
 
 " File visibility
 let NERDTreeShowHidden=1
-let NERDTreeIgnore=['\.DS_Store$', '\.git$'] " ignore files in nerd tree
+let NERDTreeRespectWildIgnore=1
 
 " Improved finding shortcuts
 map <C-n> :NERDTreeToggle<CR>
