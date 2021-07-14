@@ -30,7 +30,7 @@ set backspace=indent,eol,start
 "        stop once at the start of insert.
 
 " Spaces not tabs
-set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
+set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
 
 " Tab navigation
 nnoremap <C-Left> :tabprevious<CR>
@@ -64,11 +64,6 @@ vnoremap  <leader>y  "+y
 nnoremap  <leader>Y  "+yg_
 nnoremap  <leader>y  "+y
 nnoremap  <leader>yy  "+yy
-" " Paste from clipboard
-nnoremap <leader>p "+p
-nnoremap <leader>P "+P
-vnoremap <leader>p "+p
-vnoremap <leader>P "+P
 
 " terminal
 nmap <leader>t :vert term<CR>
@@ -79,3 +74,14 @@ set formatoptions-=cro
 
 " Allow opening of new buffers when the current contains unsaved changes
 set hidden
+
+" Prettier format the current buffer
+vnoremap <Leader>p :Prettier<CR>
+vnoremap <Leader>P :Prettier a<CR>
+nnoremap <Leader>p :Prettier<CR>
+nnoremap <Leader>P :Prettier a<CR>
+inoremap <Leader>p :Prettier<CR>
+inoremap <Leader>P :Prettier a<CR>
+
+" Set wildcard ignore
+set wildignore+=*.pyc,*.o,*.obj,*.svn,*.swp,*.class,*.hg,*.DS_Store,*.min.*,*.git
