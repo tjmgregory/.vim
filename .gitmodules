@@ -31,3 +31,6 @@
 [submodule "pack/theodored/start/codedark"]
 	path = pack/theodored/start/codedark
 	url = https://github.com/tjmgregory/vim-code-dark
+[submodule "pack/theodored/start/vim-graphql"]
+	path = pack/theodored/start/vim-graphql
+	url = https://github.com/jparise/vim-graphql.git
