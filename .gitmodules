@@ -28,3 +28,6 @@
 [submodule "pack/theodored/start/codedark"]
 	path = pack/theodored/start/codedark
 	url = https://github.com/tjmgregory/vim-code-dark
+[submodule "pack/theodored/start/markdown-preview.nvim"]
+	path = pack/theodored/start/markdown-preview.nvim
+	url = https://github.com/iamcco/markdown-preview.nvim.git
