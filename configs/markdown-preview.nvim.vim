@@ -1,6 +1,7 @@
 " If it fails to run, run this
+" This does make vim a _little_ slow to start.
 command MdInstall call mkdp#util#install()
 
 " set to 1, nvim will open the preview window after entering the markdown buffer
 " default: 0
-let g:mkdp_auto_start = 1
+let g:mkdp_auto_start = 0
