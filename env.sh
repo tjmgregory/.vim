@@ -51,3 +51,5 @@ alias vimm="vim -u NONE -U NONE -N -i NONE"
 # Home IoT devices
 alias mark='ssh pi@192.168.1.103'
 alias jez='ssh ubuntu@192.168.1.212'
+
+alias hunt='kill -KILL $(ps aux | grep node | grep -v vim | grep -v grep | sed -E '"'"'s/^[[:alnum:]]+[[:blank:]]+([[:alnum:]]+).*/\1/'"'"')'
