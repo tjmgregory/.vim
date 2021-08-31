@@ -59,7 +59,6 @@ set showcmd
 " Leader key saving and exiting
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
-nnoremap <Leader>wq :wq<CR>
 
 " Split to the right and below
 set splitbelow
@@ -84,8 +83,6 @@ vnoremap <Leader>p :Prettier<CR>
 vnoremap <Leader>P :Prettier a<CR>
 nnoremap <Leader>p :Prettier<CR>
 nnoremap <Leader>P :Prettier a<CR>
-inoremap <Leader>p :Prettier<CR>
-inoremap <Leader>P :Prettier a<CR>
 
 " Set wildcard ignore
 set wildignore+=*.pyc,*.o,*.obj,*.svn,*.swp,*.class,*.hg,*.DS_Store,*.min.*,*.git

@@ -29,7 +29,7 @@ inoremap <silent><expr> <c-@> pumvisible() ? coc#_select_confirm()
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Symbol renaming.
-nmap <leader>rn <Plug>(coc-rename)
+nmap <leader>r <Plug>(coc-rename)
 
 " Add `:Format` command to format current buffer.
 command! -nargs=0 Format :call CocAction('format')
@@ -45,3 +45,6 @@ if has('nvim-0.4.0') || has('patch-8.2.0750')
 endif
 
 hi! link CocErrorHighlight CodeError
+
+" Restart
+nnoremap <leader>R :CocRestart<CR>
