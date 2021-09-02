@@ -37,3 +37,6 @@
 [submodule "pack/theodored/start/markdown-preview.nvim"]
 	path = pack/theodored/start/markdown-preview.nvim
 	url = https://github.com/iamcco/markdown-preview.nvim.git
+[submodule "pack/theodored/start/vim-prisma"]
+	path = pack/theodored/start/vim-prisma
+	url = https://github.com/pantharshit00/vim-prisma.git
