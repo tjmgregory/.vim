@@ -40,3 +40,6 @@
 [submodule "pack/theodored/start/vim-prisma"]
 	path = pack/theodored/start/vim-prisma
 	url = https://github.com/pantharshit00/vim-prisma.git
+[submodule "pack/theodored/start/vim-svelte-plugin"]
+	path = pack/theodored/start/vim-svelte-plugin
+	url = https://github.com/leafOfTree/vim-svelte-plugin

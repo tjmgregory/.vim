@@ -7,4 +7,5 @@ source ~/.vim/configs/nerdcommenter.vim
 source ~/.vim/configs/nerdtree.vim
 source ~/.vim/configs/statusline.vim
 source ~/.vim/configs/vim-fugitive.vim
+source ~/.vim/configs/vim-svelte-plugin.vim
 source ~/.vim/configs/typescript-vim.vim
