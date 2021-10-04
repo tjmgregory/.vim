@@ -52,4 +52,12 @@ alias vimm="vim -u NONE -U NONE -N -i NONE"
 alias mark='ssh pi@192.168.1.103'
 alias jez='ssh ubuntu@192.168.1.212'
 
+# Elephant
 alias hunt='kill -KILL $(ps aux | grep node | grep -v vim | grep -v grep | sed -E '"'"'s/^[[:alnum:]]+[[:blank:]]+([[:alnum:]]+).*/\1/'"'"')'
+
+ELE_DIR='~/elephant'
+alias elpi="cd $ELE_DIR/primary-care-pilot"
+alias elci="cd $ELE_DIR/infra-circleci-main-orb"
+alias elku="cd $ELE_DIR/platform-kube-job-runner"
+alias elte="cd $ELE_DIR/terraform"
+alias elrf="cd $ELE_DIR/rfcs"
