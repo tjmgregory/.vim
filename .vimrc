@@ -6,3 +6,5 @@ source ~/.vim/configs/gitlink-vim.vim
 source ~/.vim/configs/nerdtree.vim
 source ~/.vim/configs/statusline.vim
 source ~/.vim/configs/vim-fugitive.vim
+
+source ~/.vim/snippets/config.vim
