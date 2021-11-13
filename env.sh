@@ -36,6 +36,9 @@ source "$VIM_DIR/.zsh_aliases/git.zsh"
 export EDITOR="vi -e"
 export VISUAL="vim"
 
+# ctags for mac
+alias ctags='/usr/local/opt/universal-ctags/bin/ctags'
+
 # Useful scripts
 alias uuid='python -c "import uuid; print(uuid.uuid4())" | tee >(pbcopy)'
 function sha1 {
@@ -61,3 +64,4 @@ alias elci="cd $ELE_DIR/infra-circleci-main-orb"
 alias elku="cd $ELE_DIR/platform-kube-job-runner"
 alias elte="cd $ELE_DIR/terraform"
 alias elrf="cd $ELE_DIR/rfcs"
+

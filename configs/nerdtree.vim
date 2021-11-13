@@ -17,3 +17,6 @@ set modifiable
 " Match file opening commmands of ripgrep/fzf
 let NERDTreeMapOpenSplit='<C-x>'
 let NERDTreeMapOpenVSplit='<C-v>'
+
+" Greater default NT width
+let g:NERDTreeWinSize = 45

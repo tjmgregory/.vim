@@ -1,4 +1,5 @@
 source ~/.vim/configs/_general.vim
+source ~/.vim/configs/auto-pairs.vim
 source ~/.vim/configs/coc.nvim.vim
 source ~/.vim/configs/fzf.vim
 source ~/.vim/configs/gitlink-vim.vim

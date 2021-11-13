@@ -14,11 +14,17 @@ nmap <silent> gR :call CocAction('jumpReferences', 'vsplit')<CR>
 
 " Adds prettier support
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
+vnoremap <Leader>p :Prettier<CR>
+vnoremap <Leader>P :Prettier a<CR>
+nnoremap <Leader>p :Prettier<CR>
+nnoremap <Leader>P :Prettier a<CR>
 
 " Remap keys for applying codeAction to the current line.
-nmap ac <Plug>(coc-codeaction)
+imap <leader>a <Plug>(coc-codeaction)
+nmap <leader>a <Plug>(coc-codeaction)
 " Apply AutoFix to problem on the current line.
-nmap qf <Plug>(coc-fix-current)
+imap <leader>f <Plug>(coc-fix-current)
+nmap <leader>f <Plug>(coc-fix-current)
 
 " Make <CR> auto-select the first completion item and notify coc.nvim to
 " format on enter, <cr> could be remapped by other vim plugin
@@ -31,8 +37,8 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 " Symbol renaming.
 nmap <leader>r <Plug>(coc-rename)
 
-" Add `:Format` command to format current buffer.
-command! -nargs=0 Format :call CocAction('format')
+" Move a file and update imports
+nmap <leader>m :CocCommand workspace.renameCurrentFile<CR>
 
 " Remap <C-f> and <C-b> for scroll float windows/popups.
 if has('nvim-0.4.0') || has('patch-8.2.0750')
