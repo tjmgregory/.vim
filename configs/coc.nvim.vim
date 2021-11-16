@@ -68,6 +68,11 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
+nmap <silent> gD :vsplit<CR><Plug>(coc-definition)
+nmap <silent> gY :vsplit<CR><Plug>(coc-type-definition)
+nmap <silent> gI :vsplit<CR><Plug>(coc-implementation)
+nmap <silent> gR :vsplit<CR><Plug>(coc-references)
+
 " Use K to show documentation in preview window.
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
@@ -137,6 +142,7 @@ xmap <silent> <C-s> <Plug>(coc-range-select)
 
 " Add `:Format` command to format current buffer.
 command! -nargs=0 Format :call CocAction('format')
+nnoremap <leader>p :Format<CR>
 
 " Add `:Fold` command to fold current buffer.
 command! -nargs=? Fold :call     CocAction('fold', <f-args>)
