@@ -1,4 +1,4 @@
 set rtp+=~/.vim/pack/theodored/start/fzf
 
-nnoremap <silent> <C-g> :Rg<CR>
-nnoremap <silent> <C-f> :FZF<CR>
+nnoremap <silent> sg :Rg<CR>
+nnoremap <silent> sf :FZF<CR>

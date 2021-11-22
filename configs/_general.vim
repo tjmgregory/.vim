@@ -1,4 +1,7 @@
 " General
+" Set leader key
+let mapleader="s"
+
 " Relative line numbers if you're in normal mode
 set number
 
@@ -65,7 +68,6 @@ set showcmd
 " Leader key saving and exiting
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
-nnoremap <Leader>Q :wq<CR>
 
 " Split to the right and below
 set splitbelow
