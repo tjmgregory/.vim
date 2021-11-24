@@ -40,16 +40,14 @@ export VISUAL="vim"
 alias ctags='/usr/local/opt/universal-ctags/bin/ctags'
 
 # Useful scripts
-alias uuid='python -c "import uuid; print(uuid.uuid4())" | tee >(pbcopy)'
-function sha1 {
-    echo -n "$1" | openssl sha1 | tee >(pbcopy)
-}
 alias formatjson='pbpaste | python -m json.tool | pbcopy'
 alias isodate='date -u +"%Y-%m-%dT%H:%M:%SZ" | tr -d '\n' | tee >(pbcopy)'
-
+alias ll='ls -la'
 alias rmswp="find . -type f -name \"*.sw[klmnop]\" -delete"
 alias text="pbpaste | pbcopy"
+alias uuid='python -c "import uuid; import sys; sys.stdout.write(\"{}\".format(uuid.uuid4()))" | tee >(pbcopy)'
 alias vimm="vim -u NONE -U NONE -N -i NONE"
+function sha1 { echo -n "$1" | openssl sha1 | tee >(pbcopy) }
 
 # Home IoT devices
 alias mark='ssh pi@192.168.1.103'
@@ -58,10 +56,15 @@ alias jez='ssh ubuntu@192.168.1.212'
 # Elephant
 alias hunt='kill -KILL $(ps aux | grep node | grep -v vim | grep -v grep | sed -E '"'"'s/^[[:alnum:]]+[[:blank:]]+([[:alnum:]]+).*/\1/'"'"')'
 
-ELE_DIR='~/elephant'
-alias elpi="cd $ELE_DIR/primary-care-pilot"
-alias elci="cd $ELE_DIR/infra-circleci-main-orb"
-alias elku="cd $ELE_DIR/platform-kube-job-runner"
-alias elte="cd $ELE_DIR/terraform"
-alias elrf="cd $ELE_DIR/rfcs"
-
+export ELEPHANT_DIR=~/elephant
+export PRIMARY_CARE_PILOT="$ELEPHANT_DIR/primary-care-pilot"
+export PRIMARY_CARE_PILOT_PACKAGES="$PRIMARY_CARE_PILOT/packages"
+alias elpi='cd $PRIMARY_CARE_PILOT'
+alias elcl='cd $PRIMARY_CARE_PILOT_PACKAGES/api-clinical-product'
+alias elin='cd $PRIMARY_CARE_PILOT_PACKAGES/api-inventory'
+alias elpr='cd $PRIMARY_CARE_PILOT_PACKAGES/api-prescription'
+alias elwe='cd $PRIMARY_CARE_PILOT_PACKAGES/primary-care-web'
+alias el='cd $ELEPHANT_DIR/primary-care-pilot'
+alias elrf='cd $ELEPHANT_DIR/rfcs'
+alias elte='cd $ELEPHANT_DIR/terraform'
+alias elku='cd $ELEPHANT_DIR/platform-kube-job-runner'
