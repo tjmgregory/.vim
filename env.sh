@@ -39,6 +39,9 @@ export VISUAL="vim"
 # ctags for mac
 alias ctags='/usr/local/opt/universal-ctags/bin/ctags'
 
+# lazygit
+alias gg='lazygit'
+
 # Useful scripts
 alias formatjson='pbpaste | python -m json.tool | pbcopy'
 alias isodate='date -u +"%Y-%m-%dT%H:%M:%SZ" | tr -d '\n' | tee >(pbcopy)'
