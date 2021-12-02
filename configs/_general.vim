@@ -4,12 +4,24 @@ let mapleader="s"
 
 " Relative line numbers if you're in normal mode
 set number
-
+let g:rnu_enabled=1
 augroup numbertoggle
   autocmd!
-  autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu   | endif
-  autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu                  | set nornu | endif
+  autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if g:rnu_enabled && &nu && mode() != "i" | set rnu   | endif
+  autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if g:rnu_enabled && &nu                  | set nornu | endif
 augroup END
+
+function! s:toggle_rnu()
+  if (g:rnu_enabled == 1)
+    let g:rnu_enabled=0
+    set nornu
+  else
+    let g:rnu_enabled=1
+    set rnu
+  endif
+endfunction
+
+nnoremap <silent> <leader>` :call <SID>toggle_rnu()<CR>
 
 " Line and column highlighting
 set cursorline
