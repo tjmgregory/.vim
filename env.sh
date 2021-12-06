@@ -52,6 +52,10 @@ alias uuid='python -c "import uuid; import sys; sys.stdout.write(\"{}\".format(u
 alias vimm="vim -u NONE -U NONE -N -i NONE"
 function sha1 { echo -n "$1" | openssl sha1 | tee >(pbcopy) }
 
+# Full scripts
+SCRIPT_DIR="$VIM_DIR/scripts"
+alias vid_to_gif="$SCRIPT_DIR/vid_to_gif.sh"
+
 # Home IoT devices
 alias mark='ssh pi@192.168.1.103'
 alias jez='ssh ubuntu@192.168.1.212'
