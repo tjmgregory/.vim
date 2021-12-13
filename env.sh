@@ -36,6 +36,8 @@ source "$VIM_DIR/.zsh_aliases/git.zsh"
 export EDITOR="vi -e"
 export VISUAL="vim"
 
+alias vimconf="cd $VIM_DIR; vim; cd -"
+
 # ctags for mac
 alias ctags='/usr/local/opt/universal-ctags/bin/ctags'
 
