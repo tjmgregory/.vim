@@ -7,3 +7,5 @@ brew install ripgrep
 brew install bat
 
 echo 'source ~/.vim/env.sh' >> ~/.zshrc
+
+ln ~/.vim/dotfiles/.tmux.conf.local ~/
