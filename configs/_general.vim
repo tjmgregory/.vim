@@ -60,12 +60,11 @@ set backspace=indent,eol,start
 " Spaces not tabs
 set tabstop=2 softtabstop=0 expandtab shiftwidth=2
 
-" " Window navigation
-" nnoremap <C-j> <C-w>j
-" nnoremap <C-k> <C-w>k
-" nnoremap <C-h> <C-w>h
-" nnoremap <C-l> <C-w>l
+" Create splits with - |
+nnoremap <silent> - <C-w>s
+nnoremap <silent> \| <C-w>v
 
+" tmux integrated window navigation
 let g:tmux_navigator_no_mappings = 1
 
 nnoremap <silent> <C-h> :TmuxNavigateLeft<cr>
