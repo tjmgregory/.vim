@@ -28,3 +28,6 @@
 [submodule "pack/theodored/start/vim-commentary"]
 	path = pack/theodored/start/vim-commentary
 	url = https://github.com/tpope/vim-commentary
+[submodule "pack/theodored/start/vim-tmux-navigator"]
+	path = pack/theodored/start/vim-tmux-navigator
+	url = git@github.com:christoomey/vim-tmux-navigator.git
