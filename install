@@ -3,8 +3,11 @@ echo 'source ~/.vim/.vimrc' > ~/.vimrc
 # Install FZF
 ~/.vim/pack/theodored/start/fzf/install
 
-brew install ripgrep
-brew install bat
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew update
+brew uninstall --ignore-dependencies node 
+brew uninstall --force node
+brew bundle
 
 echo 'source ~/.vim/env.sh' >> ~/.zshrc
 
