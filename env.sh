@@ -36,7 +36,11 @@ source "$VIM_DIR/.zsh_aliases/git.zsh"
 export EDITOR="vi -e"
 export VISUAL="vim"
 
-alias vimconf="cd $VIM_DIR; vim; cd -"
+# Edit commands in vim with v in normal mode
+autoload edit-command-line; zle -N edit-command-line
+bindkey -M vicmd v edit-command-line
+
+alias vimc="cd $VIM_DIR; vim; cd -"
 
 # ctags for mac
 alias ctags='/usr/local/opt/universal-ctags/bin/ctags'

@@ -2,6 +2,13 @@
 " Set leader key
 let mapleader="s"
 
+" Better ESC
+inoremap kj <ESC>
+inoremap <ESC> <NOP>
+vnoremap kj <ESC>
+vnoremap <ESC> <NOP>
+cnoremap kj <ESC>
+
 " Relative line numbers if you're in normal mode
 set number
 let g:rnu_enabled=1
@@ -52,6 +59,12 @@ set backspace=indent,eol,start
 
 " Spaces not tabs
 set tabstop=2 softtabstop=0 expandtab shiftwidth=2
+
+" Window navigation
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
 
 " Tab navigation
 nnoremap <C-Left> :tabprevious<CR>
