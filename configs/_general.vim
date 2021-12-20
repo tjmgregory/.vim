@@ -121,3 +121,7 @@ set hidden
 
 " Set wildcard ignore
 set wildignore+=*.pyc,*.o,*.obj,*.svn,*.swp,*.class,*.hg,*.DS_Store,*.min.*,*.git
+
+" Set search casing
+nmap <leader>/ :set ignorecase! ignorecase?<CR>
+set smartcase
