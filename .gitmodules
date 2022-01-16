@@ -40,3 +40,9 @@
 [submodule "pack/theodored/start/vim-prisma"]
 	path = pack/theodored/start/vim-prisma
 	url = https://github.com/pantharshit00/vim-prisma
+[submodule "pack/theodored/start/vim-javascript"]
+	path = pack/theodored/start/vim-javascript
+	url = git@github.com:pangloss/vim-javascript.git
+[submodule "pack/theodored/start/vim-jsx-typescript"]
+	path = pack/theodored/start/vim-jsx-typescript
+	url = git@github.com:peitalin/vim-jsx-typescript.git
