@@ -74,15 +74,15 @@ nnoremap <silent> <C-l> :TmuxNavigateRight<cr>
 nnoremap <silent> <C-\> :TmuxNavigatePrevious<cr>
 
 " Tab navigation
-nnoremap <C-Left> :tabprevious<CR>
-nnoremap <C-Right> :tabnext<CR>
-nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
-nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
+" nnoremap <C-Left> :tabprevious<CR>
+" nnoremap <C-Right> :tabnext<CR>
+" nnoremap <silent> <A-Left> :execute 'silent! tabmove ' . (tabpagenr()-2)<CR>
+" nnoremap <silent> <A-Right> :execute 'silent! tabmove ' . (tabpagenr()+1)<CR>
 
 nnoremap <silent> <C-w>c :tabedit<CR>
 nnoremap <silent> <C-w>x :tabclose<CR>
-nnoremap th :tabnext<CR>
-nnoremap tl :tabprev<CR>
+nnoremap th :tabprev<CR>
+nnoremap tl :tabnext<CR>
 nnoremap tt gt
 
 " Flash screen instead of beep sound
