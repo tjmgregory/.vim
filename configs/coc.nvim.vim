@@ -1,5 +1,5 @@
 " coc
-let g:coc_global_extensions = []
+let g:coc_global_extensions = ['coc-tsserver']
 
 " logging
 let g:node_client_debug = 1
