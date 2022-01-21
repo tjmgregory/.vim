@@ -124,4 +124,15 @@ set wildignore+=*.pyc,*.o,*.obj,*.svn,*.swp,*.class,*.hg,*.DS_Store,*.min.*,*.gi
 
 " Set search casing
 nmap <leader>/ :set ignorecase! ignorecase?<CR>
+set ignorecase
 set smartcase
+
+" Set scroll margin from top and bottom
+set scrolloff=10
+
+" Make all JS TS
+augroup SyntaxSettings
+  autocmd!
+  autocmd BufNewFile,BufRead *.jsx set filetype=typescriptreact
+  autocmd BufNewFile,BufRead *.js set filetype=typescript
+augroup END

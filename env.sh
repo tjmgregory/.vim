@@ -81,3 +81,15 @@ alias el='cd $ELEPHANT_DIR/primary-care-pilot'
 alias elrf='cd $ELEPHANT_DIR/rfcs'
 alias elte='cd $ELEPHANT_DIR/terraform'
 alias elku='cd $ELEPHANT_DIR/platform-kube-job-runner'
+export DEBUG_PRINT_LIMIT=100000000
+
+# Projects
+export PROJECTS=~/projects
+alias pot='cd $PROJECTS/potly'
+alias potwe='cd $PROJECTS/potly/website'
+
+# Kubernetes
+source <(kubectl completion zsh)  # setup autocomplete in zsh into the current shell
+echo "[[ $commands[kubectl] ]] && source <(kubectl completion zsh)" >> ~/.zshrc # add autocomplete permanently to your zsh shell
+alias k=kubectl
+complete -F __start_kubectl k
