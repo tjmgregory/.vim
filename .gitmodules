@@ -31,18 +31,6 @@
 [submodule "pack/theodored/start/vim-tmux-navigator"]
 	path = pack/theodored/start/vim-tmux-navigator
 	url = git@github.com:christoomey/vim-tmux-navigator.git
-[submodule "pack/theodored/start/typescript-vim"]
-	path = pack/theodored/start/typescript-vim
-	url = https://github.com/leafgarland/typescript-vim
-[submodule "pack/theodored/start/vim-graphql"]
-	path = pack/theodored/start/vim-graphql
-	url = https://github.com/jparise/vim-graphql
 [submodule "pack/theodored/start/vim-prisma"]
 	path = pack/theodored/start/vim-prisma
 	url = https://github.com/pantharshit00/vim-prisma
-[submodule "pack/theodored/start/vim-javascript"]
-	path = pack/theodored/start/vim-javascript
-	url = git@github.com:pangloss/vim-javascript.git
-[submodule "pack/theodored/start/vim-jsx-typescript"]
-	path = pack/theodored/start/vim-jsx-typescript
-	url = git@github.com:peitalin/vim-jsx-typescript.git
