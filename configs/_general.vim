@@ -2,6 +2,9 @@
 " Set leader key
 let mapleader="s"
 
+" For vim-polyglot
+set nocompatible
+
 " Better ESC
 inoremap kj <ESC>
 inoremap <ESC> <NOP>

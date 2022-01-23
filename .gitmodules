@@ -34,3 +34,6 @@
 [submodule "pack/theodored/start/vim-prisma"]
 	path = pack/theodored/start/vim-prisma
 	url = https://github.com/pantharshit00/vim-prisma
+[submodule "pack/theodored/start/vim-polyglot"]
+	path = pack/theodored/start/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot
