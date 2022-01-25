@@ -40,3 +40,6 @@
 [submodule "pack/theodored/start/vim-closetag"]
 	path = pack/theodored/start/vim-closetag
 	url = https://github.com/alvan/vim-closetag
+[submodule "pack/theodored/start/vim-styled-components"]
+	path = pack/theodored/start/vim-styled-components
+	url = https://github.com/styled-components/vim-styled-components
