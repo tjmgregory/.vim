@@ -18,6 +18,10 @@ function vco(){
     FAILURE+=$?
     OUTPUT+=$(git submodule update --init --recursive) > /dev/null 2>&1
     FAILURE+=$?
+
+    cd "$VIM_DIR/pack/theodored/start/coc.nvim"
+    yarn
+
     cd $CURR_DIR
 
     if [[ $FAILURE -eq 0 ]]
