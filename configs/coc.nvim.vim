@@ -1,6 +1,10 @@
 " coc
 let g:coc_global_extensions = []
 
+" logging
+let g:node_client_debug = 1
+let $NODE_CLIENT_LOG_FILE = "/Users/theo/.coc.log"
+
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some
 " unicode characters in the file autoload/float.vim
 set encoding=utf-8

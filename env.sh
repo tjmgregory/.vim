@@ -49,8 +49,10 @@ alias vimc="cd $VIM_DIR; vim; cd -"
 # ctags for mac
 alias ctags='/usr/local/opt/universal-ctags/bin/ctags'
 
-# lazygit
-alias gg='lazygit'
+# Some shortcuts
+alias g='lazygit'
+alias y=yarn
+alias v=vim
 
 # Useful scripts
 alias formatjson='pbpaste | python -m json.tool | pbcopy'
@@ -97,3 +99,5 @@ source <(kubectl completion zsh)  # setup autocomplete in zsh into the current s
 echo "[[ $commands[kubectl] ]] && source <(kubectl completion zsh)" >> ~/.zshrc # add autocomplete permanently to your zsh shell
 alias k=kubectl
 complete -F __start_kubectl k
+
+alias awsp="source _awsp"
