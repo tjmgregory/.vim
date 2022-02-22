@@ -37,6 +37,9 @@ set cursorcolumn
 " Syntax highlighting
 if !exists('g:syntax_on')
   syntax on
+  " How many lines Vim should look back for a recognised syntax state
+  " https://vim.fandom.com/wiki/Fix_syntax_highlighting
+  autocmd BufEnter * :syntax sync minlines=200
 endif
 set re=0
 
