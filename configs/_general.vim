@@ -42,7 +42,7 @@ if !exists('g:syntax_on')
   syntax on
   " How many lines Vim should look back for a recognised syntax state
   " https://vim.fandom.com/wiki/Fix_syntax_highlighting
-  autocmd BufEnter * :syntax sync minlines=200
+  autocmd BufEnter * :syntax sync minlines=600
 endif
 set re=0
 
@@ -111,16 +111,27 @@ nnoremap <Leader>q :q<CR>
 set splitbelow
 set splitright
 
-" " Copy to clipboard
-vnoremap <leader>y "+y
-nnoremap <leader>y "+yy
-
 " terminal
 nmap <leader>t :vert term<CR>
 nmap <leader>T :tab term<CR>
 
 " Dont continue comments on enter
-set formatoptions-=cro
+" https://superuser.com/questions/271023/can-i-disable-continuation-of-comments-to-the-next-line-in-vim
+" https://vim.fandom.com/wiki/Disable_automatic_comment_insertion
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+let g:comment_on_enter = 0
+
+function! s:toggle_comment_on_enter()
+  if (g:comment_on_enter == 1)
+    let g:comment_on_enter=0
+    :set formatoptions-=tcq
+  else
+    let g:comment_on_enter=1
+    :set formatoptions-=cro
+  endif
+endfunction
+
+nnoremap <leader>c :call <SID>toggle_comment_on_enter()<CR>
 
 " Allow opening of new buffers when the current contains unsaved changes
 set hidden
@@ -165,3 +176,27 @@ function! DeleteInactiveBufs()
     echomsg nWipeouts . ' buffer(s) wiped out'
 endfunction
 command! Bdi :call DeleteInactiveBufs()
+
+" Enter navigation mode in the terminal
+tnoremap <c-b> <c-\><c-n>
+
+" Temporary hack until https://github.com/vim/vim/pull/8365 is merged
+" Source: https://github.com/vim/vim/issues/2865#issuecomment-857272814
+augroup Terminal
+	autocmd!
+	autocmd TerminalOpen * execute "set termwinsize=0x" . (winwidth("%")-6)
+	autocmd VimResized * execute "set termwinsize=0x" . (winwidth("%")-6)
+augroup END
+
+" Add highlighting to searching
+set hlsearch
+
+" Copy filename to clipboard
+" Convert slashes to backslashes for Windows.
+if has('win32')
+  nmap <leader>yf :let @*=substitute(expand("%"), "/", "\\", "g")<CR>
+  nmap <leader>yp :let @*=substitute(expand("%:p"), "/", "\\", "g")<CR>
+else
+  nmap <leader>yf :let @*=expand("%")<CR>
+  nmap <leader>yp :let @*=expand("%:p")<CR>
+endif
