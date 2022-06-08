@@ -3,7 +3,7 @@ set -o vi
 export VIM_DIR=~/.vim
 
 export RIPGREP_CONFIG_PATH=~/.vim/.ripgreprc
-export FZF_DEFAULT_COMMAND='rg --debug --files --hidden'
+export FZF_DEFAULT_COMMAND='rg --debug --files --hidden -g "!.git/"'
 export FZF_DEFAULT_OPTS='--ansi --preview="bat --style=numbers --color=always {1}" --preview-window "right:60%" --layout reverse --margin=1,4 --bind "ctrl-n:down,ctrl-p:up,ctrl-b:preview-down,ctrl-o:preview-up"'
 
 function vco(){
@@ -78,15 +78,28 @@ alias hunt='kill -KILL $(ps aux | grep node | grep -v vim | grep -v grep | sed -
 export ELEPHANT_DIR=~/elephant
 export PRIMARY_CARE_PILOT="$ELEPHANT_DIR/primary-care-pilot"
 export PRIMARY_CARE_PILOT_PACKAGES="$PRIMARY_CARE_PILOT/packages"
-alias elpi='cd $PRIMARY_CARE_PILOT'
-alias elcl='cd $PRIMARY_CARE_PILOT_PACKAGES/api-clinical-product'
-alias elin='cd $PRIMARY_CARE_PILOT_PACKAGES/api-inventory'
-alias elpr='cd $ELEPHANT_DIR/api-prescription'
-alias elwe='cd $PRIMARY_CARE_PILOT_PACKAGES/primary-care-web'
-alias el='cd $ELEPHANT_DIR/primary-care-pilot'
-alias elrf='cd $ELEPHANT_DIR/rfcs'
-alias elte='cd $ELEPHANT_DIR/terraform'
-alias elku='cd $ELEPHANT_DIR/platform-kube-job-runner'
+
+alias e='cd $ELEPHANT_DIR'
+
+alias epi='cd $PRIMARY_CARE_PILOT'
+
+alias eacl='cd $PRIMARY_CARE_PILOT_PACKAGES/api-clinical-product'
+alias eai='cd $PRIMARY_CARE_PILOT_PACKAGES/api-inventory'
+alias eap='cd $ELEPHANT_DIR/api-prescription'
+
+alias epkjr='cd $ELEPHANT_DIR/platform-kube-job-runner'
+
+alias erf='cd $ELEPHANT_DIR/rfcs'
+alias ete='cd $ELEPHANT_DIR/terraform'
+
+alias ew='cd $PRIMARY_CARE_PILOT_PACKAGES/primary-care-web'
+alias ewp='cd $ELEPHANT_DIR/web-packages'
+alias ewcs='cd $ELEPHANT_DIR/web-config-service'
+alias ews='cd $ELEPHANT_DIR/web-shell'
+alias ewi='cd $ELEPHANT_DIR/web-mfe-inventory'
+
+
+# React testing library print limit
 export DEBUG_PRINT_LIMIT=100000000
 
 # Projects
@@ -96,8 +109,15 @@ alias potwe='cd $PROJECTS/potly/website'
 
 # Kubernetes
 source <(kubectl completion zsh)  # setup autocomplete in zsh into the current shell
-echo "[[ $commands[kubectl] ]] && source <(kubectl completion zsh)" >> ~/.zshrc # add autocomplete permanently to your zsh shell
+[[ $commands[kubectl] ]] && source <(kubectl completion zsh) # add autocomplete permanently to your zsh shell
 alias k=kubectl
+alias kgp='k get pods'
+alias kdp='k describe pod'
 complete -F __start_kubectl k
 
 alias awsp="source _awsp"
+alias p="pnpm"
+
+
+# Helix
+alias h="hx"
