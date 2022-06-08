@@ -1,4 +1,13 @@
 {
   "diagnostic.checkCurrentLine": true,
-  "tsserver.disableAutomaticTypeAcquisition": false
+  "tsserver.disableAutomaticTypeAcquisition": false,
+  "languageserver": {
+    "terraform": {
+      "command": "terraform-ls",
+      "args": ["serve"],
+      "filetypes": ["terraform", "tf"],
+      "initializationOptions": {},
+      "settings": {}
+    }
+  }
 }
