@@ -84,11 +84,15 @@ alias e='cd $ELEPHANT_DIR'
 alias epi='cd $PRIMARY_CARE_PILOT'
 
 alias eacl='cd $PRIMARY_CARE_PILOT_PACKAGES/api-clinical-product'
-alias eai='cd $PRIMARY_CARE_PILOT_PACKAGES/api-inventory'
+alias eaa='cd $ELEPHANT_DIR/api-admin'
+alias eab='cd $PRIMARY_CARE_PILOT_PACKAGES/api-billing'
+alias eaf='cd $ELEPHANT_DIR/api-federation'
+alias eai='cd $ELEPHANT_DIR/api-inventory'
 alias eap='cd $ELEPHANT_DIR/api-prescription'
+alias eapl='cd $ELEPHANT_DIR/api-price-list'
 
 alias epkjr='cd $ELEPHANT_DIR/platform-kube-job-runner'
-
+alias est='cd $ELEPHANT_DIR/software-templates'
 alias erf='cd $ELEPHANT_DIR/rfcs'
 alias ete='cd $ELEPHANT_DIR/terraform'
 
@@ -97,7 +101,9 @@ alias ewp='cd $ELEPHANT_DIR/web-packages'
 alias ewcs='cd $ELEPHANT_DIR/web-config-service'
 alias ews='cd $ELEPHANT_DIR/web-shell'
 alias ewi='cd $ELEPHANT_DIR/web-mfe-inventory'
+alias ewpl='cd $ELEPHANT_DIR/web-mfe-price-list'
 
+alias enp='cd $ELEPHANT_DIR/node-packages'
 
 # React testing library print limit
 export DEBUG_PRINT_LIMIT=100000000
@@ -121,3 +127,8 @@ alias p="pnpm"
 
 # Helix
 alias h="hx"
+alias P="prettier-pipe"
+
+
+# ZSH
+setopt share_history

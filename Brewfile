@@ -8,6 +8,7 @@ brew "nvm"
 brew "ripgrep"
 brew "starship"
 brew "tmux"
+brew "ngrok"
 
 cask "alacritty"
 cask "brave-browser"
@@ -21,6 +22,7 @@ cask "slack"
 cask "spotify"
 cask "trailer"
 cask "whatsapp"
+cask "fig"
 
 # Tilt
 # Enable Kubernetes in Docker preferences beforehand
