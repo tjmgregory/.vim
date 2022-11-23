@@ -37,8 +37,8 @@ export HISTSIZE=1000000
 
 source "$VIM_DIR/.zsh_aliases/git.zsh"
 
-export EDITOR="vi -e"
-export VISUAL="vim"
+export EDITOR="hx"
+export VISUAL="hx"
 
 # Edit commands in vim with v in normal mode
 autoload edit-command-line; zle -N edit-command-line
@@ -52,6 +52,7 @@ alias ctags='/usr/local/opt/universal-ctags/bin/ctags'
 # Some shortcuts
 alias g='lazygit'
 alias y=yarn
+alias n=npm
 alias v=vim
 
 # Useful scripts
@@ -83,9 +84,10 @@ alias e='cd $ELEPHANT_DIR'
 
 alias epi='cd $PRIMARY_CARE_PILOT'
 
-alias eacl='cd $PRIMARY_CARE_PILOT_PACKAGES/api-clinical-product'
 alias eaa='cd $ELEPHANT_DIR/api-admin'
-alias eab='cd $PRIMARY_CARE_PILOT_PACKAGES/api-billing'
+alias eab='cd $ELEPHANT_DIR/api-billing'
+alias eac='cd $ELEPHANT_DIR/api-consultation'
+alias eacp='cd $PRIMARY_CARE_PILOT_PACKAGES/api-clinical-product'
 alias eaf='cd $ELEPHANT_DIR/api-federation'
 alias eai='cd $ELEPHANT_DIR/api-inventory'
 alias eap='cd $ELEPHANT_DIR/api-prescription'
@@ -96,14 +98,18 @@ alias est='cd $ELEPHANT_DIR/software-templates'
 alias erf='cd $ELEPHANT_DIR/rfcs'
 alias ete='cd $ELEPHANT_DIR/terraform'
 
-alias ew='cd $PRIMARY_CARE_PILOT_PACKAGES/primary-care-web'
+alias ew='cd $ELEPHANT_DIR/primary-care-web'
 alias ewp='cd $ELEPHANT_DIR/web-packages'
 alias ewcs='cd $ELEPHANT_DIR/web-config-service'
 alias ews='cd $ELEPHANT_DIR/web-shell'
 alias ewi='cd $ELEPHANT_DIR/web-mfe-inventory'
 alias ewpl='cd $ELEPHANT_DIR/web-mfe-price-list'
+alias ewpr='cd $ELEPHANT_DIR/web-mfe-patient-register'
+alias ewe='cd $ELEPHANT_DIR/web-mfe-eclaims'
 
 alias enp='cd $ELEPHANT_DIR/node-packages'
+
+alias pcwc='CYPRESS_ELEPHANT_TERRITORY=nigeria CYPRESS_BASE_URL=http://127.0.0.1:4001 yarn cypress:open:acc'
 
 # React testing library print limit
 export DEBUG_PRINT_LIMIT=100000000

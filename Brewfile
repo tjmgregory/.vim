@@ -35,8 +35,12 @@ brew "entr"
 brew "helm"
 brew "jq"
 brew "kubectl-buildkit"
+brew "derailed/k9s/k9s"
 brew "tilt-dev/tap/tilt"
 brew "txn2/tap/kubefwd"
 tap "hashicorp/tap"
 brew "hashicorp/tap/terraform"
 brew "hashicorp/tap/terraform-ls"
+
+tap out-of-cheese-error/the-way
+brew the-way
